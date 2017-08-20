@@ -1,0 +1,20 @@
+{
+  "name": "web-starter-kit",
+  "description": "gulp-starter",
+  "main": "gulpfile.js",
+  "authors": [
+    "moroshka_team"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
+}
