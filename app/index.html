@@ -12,17 +12,16 @@
 <body>
 <div class="wrapper">
 
-    <!------------------------     Header     ------------------------->
 
     <header>
-        <div class="cntBlock cntBlock_header cntFlex header">
+        <div class="cntBlock cntBlock_header header">
             <a href="#" class="logo header__logo">
                 <img class="logo__img" src="img/logo.png" alt="auto geld methode logo">
             </a>
             <div class="moneyCounter header__moneyCounter">
-                <p class="moneyCounter__desc"><span class="moneyCounter__desc-row">Sinds de lancering</span>
+                <div class="moneyCounter__desc"><span class="moneyCounter__desc-row">Sinds de lancering</span>
                     <span class="moneyCounter__desc-row">van ons project verdienden</span>
-                    <span class="moneyCounter__desc-row">onze gebruikers:</span></p>
+                    <span class="moneyCounter__desc-row">onze gebruikers:</span></div>
                 <div class="moneyCounter__counter">
                     <div class="moneyCounter__money">43,861,630.44</div>
                     <span class="moneyCounter__currency">€</span>
@@ -32,23 +31,24 @@
         </div>
     </header>
 
-    <!---------------------      Main     --------------------------->
 
     <main>
         <div class="cntBlock cntBlock_main main">
             <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
             <!--<video src="#"></video>-->
             <form action="#" method="post" class="form main__form">
-                <p class="form__desc">Voer je e-mailadres in om onmiddellijk
-                    toegang te krijgen tot de applicatie:</p>
-                <div class="form__inner clearfix">
-                    <div class="fineInput fineInput_text form__fineInput">
-                        <label class="fineInput__label" for="inputName">Voer je naam in:</label>
-                        <input class="fineInput__input fineInput__input_text" id="inputName" type="text" required>
-                    </div>
-                    <div class="fineInput fineInput_text form__fineInput">
-                        <label class="fineInput__label" for="inputEmail">Voer je e-mailadres in:</label>
-                        <input class="fineInput__input fineInput__input_text" id="inputEmail" type="email" required>
+                <div class="form__desc">Voer je e-mailadres in om onmiddellijk
+                    toegang te krijgen tot de applicatie:</div>
+                <div class="form__inner">
+                    <div class="form__fineInputs clearfix">
+                        <div class="fineInput fineInput_text form__fineInput">
+                            <label class="fineInput__label" for="inputName">Voer je naam in:</label>
+                            <input class="fineInput__input fineInput__input_text" id="inputName" type="text" required>
+                        </div>
+                        <div class="fineInput fineInput_text form__fineInput">
+                            <label class="fineInput__label" for="inputEmail">Voer je e-mailadres in:</label>
+                            <input class="fineInput__input fineInput__input_text" id="inputEmail" type="email" required>
+                        </div>
                     </div>
                     <div class="fineInput fineInput_submit form__fineInput">
                         <input class="fineInput__input fineInput__input_submit" type="submit"
@@ -74,12 +74,11 @@
         </footer>
     </main>
 
-    <!---------------------       FOOTER       ------------------->
 
     <footer>
         <div class="cntBlock cntBlock_footer footer">
             <div class="footer__inner">
-                <p class="rights footer__rights">ALLE HANDELSMERKEN, LOGO'S EN DIENSTMERKEN ZIJN GEREGISTREERD EN/OF
+                <div class="rights footer__rights">ALLE HANDELSMERKEN, LOGO'S EN DIENSTMERKEN ZIJN GEREGISTREERD EN/OF
                     NIET-GEREGISTREERDE HANDELSMERKEN VAN HUN RESPECTIEVELIJKE EIGENAARS. ALLE INSPANNINGEN WERDEN
                     GELEVERD OM DE PRODUCT(EN) DIE VIA DEZE SITE VERKOCHT WORDEN ZO ACCURAAT MOGELIJK TE WEERGEVEN.
                     EENDER WELKE CLAIMS DIE GESTELD WORDEN OF VOORBEELDEN DIE AANGEBACHT WORDEN, WORDEN GEZIEN ALS
@@ -94,18 +93,43 @@
                     BESTELLEN, GAAT U AKKOORD MET ALLE VOORWAARDEN OP DE SITE. IN SOMMIGE GEVALLEN WERDEN ACTEURS
                     GEBRUIKT. DIT IS EEN NIEUW SYSTEEM EN ER BESTAAN GEEN TYPISCHE RESULTATEN. DIT PRODUCT GARANDEERT
                     GEEN VAST INKOMEN OF SUCCES, EN VOORBEELDEN VAN DE PRODUCTEIGENAAR EN ANDERE PERSONEN HUN RESULTATEN
-                    VORMEN GEEN INDICATIE VAN TOEKOMSTIG SUCCES OF WINST.</p>
+                    VORMEN GEEN INDICATIE VAN TOEKOMSTIG SUCCES OF WINST.</div>
                 <ul class="burList clearfix">
                     <li class="burList__item burList__item_copy burList__item_footer">
                         &copy; autogeldmethode.com
                     </li>
                     <li class="burList__item burList__item_support burList__item_footer">
-                        <a href="#">support@autogeldmethode.com</a>
+                        <a class="burList__link" href="#">support@autogeldmethode.com</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+</div>
+<div class="modalWindow">
+    <div class="popUp cntBlock cntBlock_popUp">
+        <div class="close">&#10005;</div>
+        <div class="popUp__header">
+            <div class="popUp__desc popUp__desc_attention">stop!</div>
+            <div class="popUp__desc popUp__desc_heading">ONTVANG JE GESCHENK
+            </div>
+            <div class="popUp__desc popUp__desc_desc">
+                Wacht! Je staat op het punt de kans van je leven te missen!</div>
+            <div class="popUp__desc popUp__desc_desc">Vul het formulier in en ontvang de applicatie gratis</div>
+            <div class="popUp__img"><img src="img/money-popup.png" alt="money"></div>
+        </div>
+        <div class="popUp__form">
+            <form action="#" class="form form_popUp" method="post">
+                <div class="fineInput fineInput_text form__fineInput">
+                    <label for="inputEmail_popUp" class="fineInput__label">Voer je e-mailadres in:</label>
+                    <input id="inputEmail_popUp" required type="email" class="fineInput__input fineInput__input_text">
+                </div>
+                <div class="fineInput fineInput_submit fineInput_submit_popUp form__fineInput">
+                    <input type="submit" value="Verdien geld" class="fineInput__input fineInput__input_submit fineInput__input_submit_popUp">
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <script src="js/libs.min.js"></script>
